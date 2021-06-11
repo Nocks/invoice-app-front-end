@@ -88,7 +88,7 @@ nav {
   padding-left: 1.5em;
   padding-right: 1.5em;
   background-color: #F2F2F2;
-  height: 150vh;
+  height: 140vh;
   width: 100%;
 }
 
@@ -100,15 +100,16 @@ nav {
       -ms-flex-align: baseline;
           align-items: baseline;
   height: 44px;
+  margin-bottom: 2rem;
 }
 
 .info-menu__left h1 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   margin-bottom: 0;
 }
 
 .info-menu__left .invoice-count {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   color: #888EB0;
   margin-bottom: 0;
 }
@@ -138,8 +139,8 @@ nav {
 }
 
 .info-menu__right .filter-menu__text {
-  margin-right: 0.75em;
-  font-size: 0.75em;
+  margin-right: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .info-menu__right .new-invoice {
@@ -174,5 +175,51 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 8px;
+}
+
+.empty-invoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-top: 6.375rem;
+  margin-bottom: 8.75rem;
+}
+
+.empty-invoice__image-wrapper {
+  width: 100%;
+}
+
+.empty-invoice__image-wrapper img {
+  width: 100%;
+}
+
+.empty-invoice__message {
+  text-align: center;
+}
+
+.empty-invoice__message .title {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.empty-invoice__message .text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #888EB0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.empty-invoice__message .text .bold {
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -86,7 +86,7 @@ nav {
         right: ToEmOrRem(24, em);
     }
     background-color: #F2F2F2;
-    height: 150vh;
+    height: 140vh;
     width: 100%;
 }
 
@@ -94,13 +94,15 @@ nav {
     justify-content: center;
     align-items: baseline;
     height: 44px;
+    margin-bottom: ToEmOrRem(32, rem);
+
     &__left {
         h1 {
-            font-size: ToEmOrRem(20, em);
+            font-size: ToEmOrRem(20, rem);
             margin-bottom: 0;
         }
         .invoice-count {
-            font-size: ToEmOrRem(12, em);
+            font-size: ToEmOrRem(12, rem);
             color: #888EB0;
             margin-bottom: 0;
         }
@@ -116,8 +118,8 @@ nav {
             align-items: center;
 
             &__text {
-                margin-right: ToEmOrRem(12, em);
-                font-size: ToEmOrRem(12, em);
+                margin-right: ToEmOrRem(12, rem);
+                font-size: ToEmOrRem(12, rem);
             }
         }
 
@@ -145,3 +147,53 @@ nav {
     }
 }
 
+.empty-invoice {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: {
+        left: ToEmOrRem(40, rem);
+        right: ToEmOrRem(40, rem);
+    }
+    margin: {
+        top: ToEmOrRem(102, rem);
+        bottom: ToEmOrRem(140, rem);
+    }
+
+    &__image-wrapper {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__message {
+
+        text-align: center;
+
+        .title {
+            font-size: ToEmOrRem(20, rem);
+            margin: {
+                top: ToEmOrRem(40, rem);;
+                bottom: ToEmOrRem(24, rem);
+            }
+        }
+
+        .text {
+            font-size: ToEmOrRem(12, rem);
+            font-weight: 500;
+            color: #888EB0;
+            padding: {
+                left: ToEmOrRem(8, rem);
+                right: ToEmOrRem(8, rem);
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+        }
+
+    }
+}
