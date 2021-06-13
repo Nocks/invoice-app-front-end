@@ -1,0 +1,110 @@
+.invoice-code::before {
+    content: "#";
+    color: #7E88C3;
+}
+
+.status  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: ToEmOrRem(104, rem);
+    height: ToEmOrRem(40, rem);
+    border-radius: ToEmOrRem(6, rem);
+    font-weight: 700;
+
+    $status: &;
+
+    &__bullet {
+        width: ToEmOrRem(8, rem);
+        height: ToEmOrRem(8, rem);
+        margin-right: ToEmOrRem(8, rem);
+    }
+
+    &.draft {
+        background-color: #373B53;
+        background-color: rgba(55, 59, 83, .06);
+
+        #{$status}__bullet {
+            display: block;
+            background-color: #373B53;
+            border-radius: 50%;
+        }
+    }
+
+    &.pending {
+        color: #FF8F00;
+        background-color: rgba(255, 143, 0, 0.06);
+        
+        #{$status}__bullet {
+            display: block;
+            background-color: #FF8F00;
+            border-radius: 50%;
+        }
+    }
+
+    &.paid {
+        color: #33D69F;
+        background-color: rgba(51, 214, 159, 0.06);
+
+        #{$status}__bullet {
+            display: block;
+            background-color: #33D69F;
+            border-radius: 50%;
+        }
+    }
+}
+
+.invoice-list-item {
+    margin-bottom: 1rem;
+    font-size: ToEmOrRem(12, rem);
+    font-weight: 500;
+
+    &__wrapper {
+        padding: ToEmOrRem(24, rem);
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397)
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .invoice-code {
+        font-weight: 700;
+        order: -9;
+    }
+
+    .due-date {
+        color: #888EB0;
+        order: -7;
+        align-self: flex-start;
+        // Temp hack below
+        margin-top: ToEmOrRem(24, rem);
+        margin-right: ToEmOrRem(100, rem);
+    }
+
+    .client-name {
+        color: #5e5f69;
+        order: -8;
+        align-self: flex-end;
+    }
+
+    .grand-total {
+        font-size: ToEmOrRem(16, rem);
+        font-weight: 700;
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .status {
+        order: 2;
+    }
+
+    .details-icon {
+        display: none;
+    }
+}

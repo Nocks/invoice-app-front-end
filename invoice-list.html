@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Invoice List</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container-fluid dashboard-container">
+        <div class="dashboard-container__inner ">
+            <nav>
+                <div class="logo-wrapper">
+                    <img src="assets/logo.svg" alt="logo" class="logo-wrapper__logo">
+                    <div class="logo-wrapper__down"></div>
+                </div>
+                <div class="theme-toggler">
+                    <img src="assets/icon-moon.svg" alt="theme-toggler">
+                </div>
+                <div class="user-wrapper">
+                    <img src="assets/image-avatar.jpg" alt="user-pic" class="user-wrapper__image">
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="info-menu d-flex justify-content-between">
+                    <div class="info-menu__left">
+                        <h1>Invoice</h1>
+                        <p class="invoice-count">3 invoices</p>
+                    </div>
+                    <div class="info-menu__right">
+                        <span class="filter-menu">
+                            <span class="filter-menu__text">Filter</span>
+                            <span><img src="assets/icon-arrow-down.svg" alt="filter-arrow" srcset=""></span>
+                        </span>
+                        <span class="badge badge-pill badge-primary new-invoice">
+                            <span class="icon-plus-wrapper"><img src="assets/icon-plus.svg" alt="new invoice" class="icon-plus"></span> 
+                            <span>New</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="invoice-list-item">
+                    <div class="invoice-list-item__wrapper">
+                        <div class="invoice-list-item__details">
+                            <span class="invoice-code">RT3080</span>
+                            <span class="due-date">Due 19 Aug 2021</span>
+                            <span class="client-name">Jensen Huang</span>
+                            <span class="grand-total">£1,800.90</span>
+                            <span class="status paid">
+                                <span class="status__bullet"></span>
+                                <span class="status__name">Paid</span>
+                            </span>
+                            <span class="details-icon">
+                                <img src="assets/icon-arrow-right.svg" alt="" srcset="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="invoice-list-item">
+                    <div class="invoice-list-item__wrapper">
+                        <div class="invoice-list-item__details">
+                            <span class="invoice-code">XM9141</span>
+                            <span class="due-date">Due 20 Sep 2021</span>
+                            <span class="client-name">Alex Grim</span>
+                            <span class="grand-total">£556.00</span>
+                            <span class="status pending">
+                                <span class="status__bullet"></span>
+                                <span class="status__name">Pending</span>
+                            </span>
+                            <span class="details-icon">
+                                <img src="assets/icon-arrow-right.svg" alt="" srcset="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="invoice-list-item">
+                    <div class="invoice-list-item__wrapper">
+                        <div class="invoice-list-item__details">
+                            <span class="invoice-code">FV2353</span>
+                            <span class="due-date">Due 12 Nov 2021</span>
+                            <span class="client-name">Anita Wainwright</span>
+                            <span class="grand-total">£3,102.04</span>
+                            <span class="status draft">
+                                <span class="status__bullet"></span>
+                                <span class="status__name">Draft</span>
+                            </span>
+                            <span class="details-icon">
+                                <img src="assets/icon-arrow-right.svg" alt="" srcset="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
