@@ -1,3 +1,3 @@
 @function ToEmOrRem($pixel-value, $unit-type) {
-    @return ($pixel-value / 16) + $unit-type;
+    @return ($pixel-value / ($root-font-size / 1px)) + $unit-type;
 }

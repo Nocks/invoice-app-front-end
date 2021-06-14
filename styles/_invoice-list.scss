@@ -3,6 +3,17 @@
     color: #7E88C3;
 }
 
+@mixin status-details($hex-color, $rgba-color) {
+    color: $hex-color;
+    background-color: $rgba-color;
+
+    .status__bullet {
+        background-color: $hex-color;
+        display: block;
+        border-radius: 50%;
+    }
+}
+
 .status  {
     display: flex;
     justify-content: center;
@@ -21,36 +32,15 @@
     }
 
     &.draft {
-        background-color: #373B53;
-        background-color: rgba(55, 59, 83, .06);
-
-        #{$status}__bullet {
-            display: block;
-            background-color: #373B53;
-            border-radius: 50%;
-        }
+        @include status-details(#373B53, rgba(55, 59, 83, .06));
     }
 
     &.pending {
-        color: #FF8F00;
-        background-color: rgba(255, 143, 0, 0.06);
-        
-        #{$status}__bullet {
-            display: block;
-            background-color: #FF8F00;
-            border-radius: 50%;
-        }
+        @include status-details(#FF8F00, rgba(255, 143, 0, 0.06));
     }
 
     &.paid {
-        color: #33D69F;
-        background-color: rgba(51, 214, 159, 0.06);
-
-        #{$status}__bullet {
-            display: block;
-            background-color: #33D69F;
-            border-radius: 50%;
-        }
+        @include status-details(#33D69F, rgba(51, 214, 159, 0.06));
     }
 }
 
@@ -62,7 +52,7 @@
     &__wrapper {
         padding: ToEmOrRem(24, rem);
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: ToEmOrRem(8, rem);
         box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397)
     }
 
@@ -79,12 +69,18 @@
     }
 
     .due-date {
-        color: #888EB0;
+        color: #7E88C3;
         order: -7;
         align-self: flex-start;
-        // Temp hack below
-        margin-top: ToEmOrRem(24, rem);
-        margin-right: ToEmOrRem(100, rem);
+        margin: {
+            top: ToEmOrRem(24, rem);
+            bottom: ToEmOrRem(-8, rem);
+        }
+        width: 100%;
+
+        &__title {
+            color: #888EB0;
+        }
     }
 
     .client-name {
@@ -94,8 +90,10 @@
     }
 
     .grand-total {
-        font-size: ToEmOrRem(16, rem);
-        font-weight: 700;
+        font: {
+            size: ToEmOrRem(16, rem);
+            weight: 700;
+        }
         order: 1;
         align-self: flex-end;
     }

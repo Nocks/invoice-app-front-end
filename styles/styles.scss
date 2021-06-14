@@ -1,8 +1,14 @@
+@import 'variables';
 @import 'functions';
 @import 'invoice-list';
 
+html {
+    font-size: $root-font-size;
+}
+
 body {
     font-family: 'Spartan', sans-serif;
+    line-height: 1.5;
 }
 
 .dashboard-container {
@@ -178,6 +184,7 @@ nav {
                 top: ToEmOrRem(40, rem);;
                 bottom: ToEmOrRem(24, rem);
             }
+            line-height: ToEmOrRem(22, rem);
         }
 
         .text {
@@ -188,11 +195,12 @@ nav {
                 left: ToEmOrRem(8, rem);
                 right: ToEmOrRem(8, rem);
             }
+            line-height: ToEmOrRem(15, rem);
+            letter-spacing: ToEmOrRem(-0.25, rem);
 
             .bold {
-                font-weight: bold;
+                font-weight: 700;
             }
         }
-
     }
 }
