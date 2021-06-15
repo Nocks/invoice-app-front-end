@@ -16,6 +16,7 @@
   width: 6.5rem;
   height: 2.5rem;
   border-radius: 0.375rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
@@ -136,6 +137,38 @@
 
 .invoice-list-item .details-icon {
   display: none;
+}
+
+.go-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.go-back__icon {
+  margin-right: 1.47875rem;
+}
+
+.go-back__text {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.status-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 html {

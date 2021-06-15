@@ -21,7 +21,10 @@
     width: ToEmOrRem(104, rem);
     height: ToEmOrRem(40, rem);
     border-radius: ToEmOrRem(6, rem);
-    font-weight: 700;
+    font: {
+        size: ToEmOrRem(12, rem);
+        weight: 700;
+    }
 
     $status: &;
 
