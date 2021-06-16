@@ -1,6 +1,6 @@
 .invoice-code::before {
     content: "#";
-    color: #7E88C3;
+    color: $color-ship-cove;
 }
 
 @mixin status-details($hex-color, $rgba-color) {
@@ -72,7 +72,7 @@
     }
 
     .due-date {
-        color: #7E88C3;
+        color: $color-ship-cove;
         order: -7;
         align-self: flex-start;
         margin: {

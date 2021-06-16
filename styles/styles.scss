@@ -36,7 +36,7 @@ nav {
 .logo-wrapper {
     width: ToEmOrRem(72, em);
     height: ToEmOrRem(72, em);
-    background-color: #7C5DFA;
+    background-color: $color-cornflower-blue;
     border-top-right-radius: ToEmOrRem(20, em);
     border-bottom-right-radius: ToEmOrRem(20, em);
     position: relative;
@@ -46,7 +46,7 @@ nav {
         bottom: 0;
         width: ToEmOrRem(72, em);
         height: ToEmOrRem(36, em);
-        background-color: #9277FF;
+        background-color: $color-heliotrope;
         border-top-left-radius: ToEmOrRem(20, em);
         border-bottom-right-radius: ToEmOrRem(20, em);
     }
@@ -133,7 +133,7 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #7C5DFA;
+            background-color: $color-cornflower-blue;
             height: 44px;
             width: 90px;
             border-radius: 24px;
