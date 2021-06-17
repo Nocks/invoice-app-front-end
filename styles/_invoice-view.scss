@@ -1,9 +1,3 @@
-@mixin section-wrapper($background-color) {
-    background: $background-color;
-    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
-    border-radius: 8px;
-}
-
 .go-back {
     display: flex;
     justify-self: center;
@@ -22,8 +16,159 @@
     }
 }
 
+.invoice-view-menu {
+    @include section-wrapper(#fff);
+    height: ToEmOrRem(88, rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: {
+        left: ToEmOrRem(24, rem);
+        right: ToEmOrRem(24, rem);
+    };
+}
+
 .status-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+
+    .text {
+        color: #858BB2;
+        font: {
+            size: ToEmOrRem(12, rem);
+            font-weight: 500;
+        }
+        line-height: ToEmOrRem(15, rem);
+        letter-spacing: ToEmOrRem(-0.25, rem);
+    }
+}
+
+.action-buttons {
+    display: none;
+ 
+    &__edit {
+        @include invoice-action-button($color-whisper, $color-ship-cove);
+    }
+
+    &__delete {
+        @include invoice-action-button($color-burnt-sienna);
+    }
+
+    &__mark-paid {
+        @include invoice-action-button($color-cornflower-blue);
+    }
+}
+
+.invoice-details {
+    @include section-wrapper(#fff);
+    color: $color-ship-cove;
+    font: {
+        size: ToEmOrRem(12, rem);
+        weight: 500;
+        style: normal;
+    }
+    letter-spacing: ToEmOrRem(-0.25, rem);
+    line-height: ToEmOrRem(15, rem);
+    margin-top: 1rem;
+    padding: ToEmOrRem(24, rem);
+
+    .address {
+        font-size: ToEmOrRem(11, rem);
+        line-height: ToEmOrRem(18, rem);
+    }
+    
+    &__first {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: ToEmOrRem(31, rem);
+
+        .primary {
+            margin-bottom: ToEmOrRem(30, rem);
+
+            .invoice-code {
+                @include strong-text();
+                margin-bottom: ToEmOrRem(4, rem);
+            }
+        }
+    }
+
+    &__second {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .date,
+        .bill-to__client-name, 
+        .sent-to__client-email {
+            @include strong-text(15, $line-height:20);
+        }
+
+        .label {
+            margin-bottom: ToEmOrRem(12, rem);
+        }
+
+        .date-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bill-to {
+
+            .client-address {
+                margin-top: ToEmOrRem(8, rem);
+            }
+
+        }
+
+        .sent-to {
+            margin-top: ToEmOrRem(32, rem);
+        }
+
+    }
+
+    &__third {
+        margin-top: ToEmOrRem(40, rem);
+        @include section-wrapper($color-whisper);
+        
+        .invoice-items {
+            font-weight: 700;
+
+            &__inner-wrapper {
+                padding: ToEmOrRem(24, rem);
+            }
+        }
+
+        .invoice-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: ToEmOrRem(24, rem);
+        }
+
+        .amount-due {
+            color: #fff;
+            padding: ToEmOrRem(24, rem);
+            background-color: $color-oxford-blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: ToEmOrRem(8, rem);
+            border-bottom-right-radius: ToEmOrRem(8, rem);
+
+            &__amount {
+                @include strong-text(
+                    $font-size: 20,
+                    $text-color: $color-white,
+                    $letter-spacing: -0.42, 
+                    $line-height: 32
+                );
+            }
+        }
+
+    }
 }

@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 @import 'functions';
 @import 'invoice-list';
 @import 'invoice-view';
@@ -91,8 +92,8 @@ nav {
         left: ToEmOrRem(24, em);
         right: ToEmOrRem(24, em);
     }
-    background-color: #F2F2F2;
-    height: 140vh;
+    background-color: $color-whisper;
+    min-height: 100vh;
     width: 100%;
 }
 

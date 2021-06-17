@@ -1,0 +1,39 @@
+@mixin section-wrapper($background-color) {
+    background: $background-color;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
+    border-radius: ToEmOrRem(8, rem);
+}
+
+@mixin invoice-action-button($bg-color, $text-color: #fff) {
+    font: {
+        size: ToEmOrRem(12, rem);
+        weight: 700;
+    }
+    color: $text-color;
+    background-color: $bg-color;
+    line-height: ToEmOrRem(15, rem);
+    letter-spacing: ToEmOrRem(-0.25, rem);
+    border-radius: ToEmOrRem(24, rem);
+    padding: {
+        left: ToEmOrRem(24, rem);
+        right: ToEmOrRem(24, rem);
+    };
+    height: ToEmOrRem(48, rem);
+    outline: none;
+    border: none;
+}
+
+@mixin strong-text(
+    $font-size: 12,
+    $text-color: $color-Vulcan,
+    $letter-spacing: -0.25,
+    $line-height: 15
+) {
+    color: $text-color;
+    font: {
+        size: ToEmOrRem($font-size, rem);
+        weight: 700;
+    }
+    letter-spacing: ToEmOrRem($letter-spacing, rem);
+    line-height: ToEmOrRem($line-height, rem);
+}
