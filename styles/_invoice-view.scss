@@ -133,8 +133,9 @@
 
     &__third {
         margin-top: ToEmOrRem(40, rem);
+        margin-bottom: ToEmOrRem(56, rem);
         @include section-wrapper($color-whisper);
-        
+
         .invoice-items {
             font-weight: 700;
 
@@ -148,6 +149,24 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: ToEmOrRem(24, rem);
+
+            .label, &__amount {
+                @include strong-text()
+            }
+
+            &:last-child {
+                margin-bottom: ToEmOrRem(0, rem);
+            }
+
+            &__description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .label {
+                    margin-bottom: ToEmOrRem(8, rem);
+                }
+            }
         }
 
         .amount-due {

@@ -345,6 +345,7 @@
 
 .invoice-details__third {
   margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
   background: #F8F8FB;
   -webkit-box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
           box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
@@ -370,6 +371,35 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.5rem;
+}
+
+.invoice-details__third .invoice-item .label, .invoice-details__third .invoice-item__amount {
+  color: #0C0E16;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.01562rem;
+  line-height: 0.9375rem;
+}
+
+.invoice-details__third .invoice-item:last-child {
+  margin-bottom: 0rem;
+}
+
+.invoice-details__third .invoice-item__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.invoice-details__third .invoice-item__description .label {
+  margin-bottom: 0.5rem;
 }
 
 .invoice-details__third .amount-due {
