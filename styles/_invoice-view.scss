@@ -1,3 +1,8 @@
+body {
+    position: relative;
+    background-color: $color-whisper;
+}
+
 .go-back {
     display: flex;
     justify-self: center;
@@ -46,7 +51,16 @@
 }
 
 .action-buttons {
-    display: none;
+    position: absolute;
+    bottom: ToEmOrRem(-147, rem);
+    left: 0;
+    right: 0;
+    padding: ToEmOrRem(24, rem);
+    height: ToEmOrRem(91, rem);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
  
     &__edit {
         @include invoice-action-button($color-whisper, $color-ship-cove);
@@ -122,7 +136,6 @@
             .client-address {
                 margin-top: ToEmOrRem(8, rem);
             }
-
         }
 
         .sent-to {
@@ -133,7 +146,6 @@
 
     &__third {
         margin-top: ToEmOrRem(40, rem);
-        margin-bottom: ToEmOrRem(56, rem);
         @include section-wrapper($color-whisper);
 
         .invoice-items {
@@ -188,6 +200,5 @@
                 );
             }
         }
-
     }
 }
