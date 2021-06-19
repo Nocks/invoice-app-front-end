@@ -202,3 +202,17 @@ body {
         }
     }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media screen  and (min-width: 576px) {
+
+    .invoice-details {
+
+        &__second {
+
+            .sent-to {
+                margin-top: 0;
+            }
+        }
+    }
+}
