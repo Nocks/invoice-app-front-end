@@ -216,3 +216,25 @@ body {
         }
     }
 }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .invoice-view-menu {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .status-info {
+        width: 50%;
+        width: 159px;
+    }
+
+    .action-buttons {
+        position: static;
+        display: flex;
+        width: 50%;
+        height: inherit;
+        padding: 0;
+    }
+}
