@@ -222,12 +222,12 @@ body {
     .invoice-view-menu {
         display: flex;
         justify-content: space-between;
-
+        height: inherit;
+        padding: ToEmOrRem(24, rem);
     }
 
     .status-info {
-        width: 50%;
-        width: 159px;
+        width: ToEmOrRem(159, rem);
     }
 
     .action-buttons {

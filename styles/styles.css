@@ -460,10 +460,11 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: inherit;
+    padding: 1.5rem;
   }
   .status-info {
-    width: 50%;
-    width: 159px;
+    width: 9.9375rem;
   }
   .action-buttons {
     position: static;
