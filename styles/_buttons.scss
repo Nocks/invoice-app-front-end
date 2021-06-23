@@ -1,0 +1,24 @@
+.action-buttons {
+    position: absolute;
+    bottom: ToEmOrRem(-147, rem);
+    left: 0;
+    right: 0;
+    padding: ToEmOrRem(24, rem);
+    height: ToEmOrRem(91, rem);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    &__edit {
+        @include invoice-action-button($color-whisper, $color-ship-cove);
+    }
+
+    &__delete {
+        @include invoice-action-button($color-burnt-sienna);
+    }
+
+    &__mark-paid {
+        @include invoice-action-button($color-cornflower-blue);
+    }
+}
