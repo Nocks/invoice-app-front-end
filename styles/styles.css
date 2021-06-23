@@ -1,28 +1,24 @@
 /* Colours */
-.action-buttons {
-  position: absolute;
-  bottom: -9.1875rem;
-  left: 0;
-  right: 0;
-  padding: 1.5rem;
-  height: 5.6875rem;
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .action-buttons__edit {
   font-size: 0.75rem;
   font-weight: 700;
   color: #7E88C3;
   background-color: #F8F8FB;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.action-buttons__edit:hover, .action-buttons__edit:active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7E88C3;
+  background-color: #DFE3FA;
   line-height: 0.9375rem;
   letter-spacing: -0.01562rem;
   border-radius: 1.5rem;
@@ -48,11 +44,41 @@
   border: none;
 }
 
+.action-buttons__delete:hover, .action-buttons__delete:active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #FF9797;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
 .action-buttons__mark-paid {
   font-size: 0.75rem;
   font-weight: 700;
   color: #fff;
   background-color: #7C5DFA;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.action-buttons__mark-paid:hover, .action-buttons__mark-paid:active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #9277FF;
   line-height: 0.9375rem;
   letter-spacing: -0.01562rem;
   border-radius: 1.5rem;
@@ -227,6 +253,11 @@ body {
 .go-back__text {
   font-size: 0.75rem;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.go-back__text:hover, .go-back__text:active {
+  color: #7E88C3;
 }
 
 .invoice-view-menu {
@@ -267,6 +298,25 @@ body {
   font-font-weight: 500;
   line-height: 0.9375rem;
   letter-spacing: -0.01562rem;
+}
+
+.action-buttons {
+  position: absolute;
+  bottom: -9.1875rem;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  height: 5.6875rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .invoice-details {

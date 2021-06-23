@@ -18,6 +18,11 @@ body {
             size: ToEmOrRem(12, rem);
             weight: 700;
         }
+        cursor: pointer;
+        &:hover,
+        &:active {
+            color: $color-ship-cove;
+        }
     }
 }
 
@@ -48,6 +53,19 @@ body {
         line-height: ToEmOrRem(15, rem);
         letter-spacing: ToEmOrRem(-0.25, rem);
     }
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: ToEmOrRem(-147, rem);
+    left: 0;
+    right: 0;
+    padding: ToEmOrRem(24, rem);
+    height: ToEmOrRem(91, rem);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .invoice-details {

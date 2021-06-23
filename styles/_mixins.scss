@@ -37,3 +37,10 @@
     letter-spacing: ToEmOrRem($letter-spacing, rem);
     line-height: ToEmOrRem($line-height, rem);
 }
+
+@mixin button-hover-active($bg-color, $text-color) {
+    &:hover,
+    &:active {
+        @include invoice-action-button($bg-color, $text-color);
+    }
+}
