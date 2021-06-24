@@ -149,6 +149,10 @@ body {
             }
         }
 
+        .invoice-items-heading {
+            display: none;
+        }
+
         .invoice-item {
             display: flex;
             justify-content: space-between;
@@ -244,6 +248,47 @@ body {
         }
 
         &__third {
+
+            .invoice-items-heading {
+                display: flex;
+                justify-content: space-between;
+                font: {
+                    weight: 500;
+                    size: ToEmOrRem(11, rem);
+                };
+                line-height: ToEmOrRem(18, rem);
+                letter-spacing: -0.229167px;
+                padding: {
+                    top: ToEmOrRem(8, rem);
+                    bottom: ToEmOrRem(32, rem);
+                };
+    
+                &__group-first {
+                    flex-basis: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+    
+                &__group-second {
+                    display: flex;
+                    flex-basis: 20%;
+                    justify-content: flex-end;
+                }
+    
+                &__item-name {
+                    flex-basis: 50%;
+                }
+    
+                &__quantity {
+                    flex-basis: 10%;
+                    text-align: right;
+                }
+    
+                &__price {
+                    flex-basis: 20%;
+                    text-align: right;
+                }
+            }
     
             .amount-due {
     
