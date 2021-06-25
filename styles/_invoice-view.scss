@@ -247,6 +247,13 @@ body {
             justify-content: space-between;
         }
 
+        &__second {
+
+            .sent-to {
+                margin-right: 10vw;
+            }
+        }
+
         &__third {
 
             .invoice-items-heading {

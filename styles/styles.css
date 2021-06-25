@@ -541,6 +541,9 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .invoice-details__second .sent-to {
+    margin-right: 10vw;
+  }
   .invoice-details__third .invoice-items-heading {
     display: -webkit-box;
     display: -ms-flexbox;
