@@ -12,6 +12,37 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <!-- Beginning of Confirm Deletion modal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>Confirm Deletion</h1>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you want to delete invoice 
+                                <span class="invoice-code">XM9141</span>? 
+                                This action cannot be undone.
+                            </div>
+                            <div class="modal-footer">
+                                <div class="modal-action-buttons">
+                                    <button class="action-buttons__edit" data-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button class="action-buttons__delete">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Confirm Deletion modal -->
+
     <div class="container-fluid dashboard-container">
         <div class="dashboard-container__inner ">
             <nav>
@@ -41,7 +72,9 @@
                     </div>
                     <div class="action-buttons">
                         <button class="action-buttons__edit">Edit</button>
-                        <button class="action-buttons__delete">Delete</button>
+                        <button class="action-buttons__delete" data-toggle="modal" data-target="#myModal">
+                            Delete
+                        </button>
                         <button class="action-buttons__mark-paid">Mark as Paid</button>
                     </div>
                 </div>
