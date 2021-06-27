@@ -3,6 +3,18 @@ body {
     background-color: $color-whisper;
 }
 
+#myModal {
+    padding: {
+        top: 50%;
+        left: ToEmOrRem(24, rem);
+        right: ToEmOrRem(24, rem)
+    };
+
+    .modal-dialog {
+        margin: 0;
+    }
+}
+
 .go-back {
     display: flex;
     justify-self: center;

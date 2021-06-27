@@ -235,6 +235,16 @@ body {
   background-color: #F8F8FB;
 }
 
+#myModal {
+  padding-top: 50%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#myModal .modal-dialog {
+  margin: 0;
+}
+
 .go-back {
   display: -webkit-box;
   display: -ms-flexbox;
