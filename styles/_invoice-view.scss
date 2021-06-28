@@ -10,8 +10,48 @@ body {
         right: ToEmOrRem(24, rem)
     };
 
-    .modal-dialog {
-        margin: 0;
+    .modal {
+
+        &-dialog {
+            margin: 0;
+        }
+    
+        &-content {
+            padding: ToEmOrRem(32, rem);
+        }
+
+        &-header, &-body, &-footer {
+            padding: 0;
+        }
+
+        &-header {
+            border-bottom: none;
+
+             h1 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: -0.42px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-body {
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: -0.25px;
+            color: $color-deletion-modal-text;
+            margin-bottom: 24px;
+
+            .invoice-code::before {
+                color: $color-deletion-modal-text;
+            }
+        }
+
+        &-footer {
+            border-top: none;
+        }
+
     }
 }
 

@@ -245,6 +245,42 @@ body {
   margin: 0;
 }
 
+#myModal .modal-content {
+  padding: 2rem;
+}
+
+#myModal .modal-header, #myModal .modal-body, #myModal .modal-footer {
+  padding: 0;
+}
+
+#myModal .modal-header {
+  border-bottom: none;
+}
+
+#myModal .modal-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.42px;
+  margin-bottom: 8px;
+}
+
+#myModal .modal-body {
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: -0.25px;
+  color: #888EB0;
+  margin-bottom: 24px;
+}
+
+#myModal .modal-body .invoice-code::before {
+  color: #888EB0;
+}
+
+#myModal .modal-footer {
+  border-top: none;
+}
+
 .go-back {
   display: -webkit-box;
   display: -ms-flexbox;
