@@ -3,11 +3,11 @@ body {
     background-color: $color-whisper;
 }
 
-#myModal {
+#confirmDeletion {
     padding: {
         top: 50%;
         left: ToEmOrRem(24, rem);
-        right: ToEmOrRem(24, rem)
+        right: ToEmOrRem(24, rem);
     };
 
     .modal {
@@ -28,20 +28,22 @@ body {
             border-bottom: none;
 
              h1 {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 32px;
+                font: {
+                    size: ToEmOrRem(20, rem);
+                    weight: 700;
+                };
+                line-height: ToEmOrRem(32, rem);
                 letter-spacing: -0.42px;
-                margin-bottom: 8px;
+                margin-bottom: ToEmOrRem(8, rem);
             }
         }
 
         &-body {
-            font-size: 12px;
-            line-height: 22px;
+            font-size: ToEmOrRem(12, rem);
+            line-height: ToEmOrRem(22, rem);
             letter-spacing: -0.25px;
             color: $color-deletion-modal-text;
-            margin-bottom: 24px;
+            margin-bottom: ToEmOrRem(24, rem);
 
             .invoice-code::before {
                 color: $color-deletion-modal-text;
@@ -51,7 +53,6 @@ body {
         &-footer {
             border-top: none;
         }
-
     }
 }
 
@@ -290,6 +291,20 @@ body {
         width: ToEmOrRem(309, rem);
         height: inherit;
         padding: 0;
+    }
+
+    #confirmDeletion {
+        padding: {
+            top: 30vh;
+            left: 50%;
+        };
+
+        .modal {
+    
+            &-dialog {
+                transform: translateX(-50%);
+            }
+        }
     }
 
     .invoice-details {

@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="modal fade" id="myModal">
+                <div class="modal fade" id="confirmDeletion">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -29,7 +29,7 @@
                             </div>
                             <div class="modal-footer">
                                 <div class="modal-action-buttons">
-                                    <button class="action-buttons__edit" data-dismiss="modal">
+                                    <button class="action-buttons__cancel" data-dismiss="modal">
                                         Cancel
                                     </button>
                                     <button class="action-buttons__delete">Delete</button>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="action-buttons">
                         <button class="action-buttons__edit">Edit</button>
-                        <button class="action-buttons__delete" data-toggle="modal" data-target="#myModal">
+                        <button class="action-buttons__delete" data-toggle="modal" data-target="#confirmDeletion">
                             Delete
                         </button>
                         <button class="action-buttons__mark-paid">Mark as Paid</button>

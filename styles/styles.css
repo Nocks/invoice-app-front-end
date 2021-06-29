@@ -1,5 +1,5 @@
 /* Colours */
-.action-buttons__edit {
+.action-buttons__edit, .action-buttons__cancel {
   font-size: 0.75rem;
   font-weight: 700;
   color: #7E88C3;
@@ -14,7 +14,7 @@
   border: none;
 }
 
-.action-buttons__edit:hover, .action-buttons__edit:active {
+.action-buttons__edit:hover, .action-buttons__edit:active, .action-buttons__cancel:hover, .action-buttons__cancel:active {
   font-size: 0.75rem;
   font-weight: 700;
   color: #7E88C3;
@@ -235,49 +235,49 @@ body {
   background-color: #F8F8FB;
 }
 
-#myModal {
+#confirmDeletion {
   padding-top: 50%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-#myModal .modal-dialog {
+#confirmDeletion .modal-dialog {
   margin: 0;
 }
 
-#myModal .modal-content {
+#confirmDeletion .modal-content {
   padding: 2rem;
 }
 
-#myModal .modal-header, #myModal .modal-body, #myModal .modal-footer {
+#confirmDeletion .modal-header, #confirmDeletion .modal-body, #confirmDeletion .modal-footer {
   padding: 0;
 }
 
-#myModal .modal-header {
+#confirmDeletion .modal-header {
   border-bottom: none;
 }
 
-#myModal .modal-header h1 {
-  font-size: 20px;
+#confirmDeletion .modal-header h1 {
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 2rem;
   letter-spacing: -0.42px;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
-#myModal .modal-body {
-  font-size: 12px;
-  line-height: 22px;
+#confirmDeletion .modal-body {
+  font-size: 0.75rem;
+  line-height: 1.375rem;
   letter-spacing: -0.25px;
   color: #888EB0;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
-#myModal .modal-body .invoice-code::before {
+#confirmDeletion .modal-body .invoice-code::before {
   color: #888EB0;
 }
 
-#myModal .modal-footer {
+#confirmDeletion .modal-footer {
   border-top: none;
 }
 
@@ -577,6 +577,14 @@ body {
     width: 19.3125rem;
     height: inherit;
     padding: 0;
+  }
+  #confirmDeletion {
+    padding-top: 30vh;
+    padding-left: 50%;
+  }
+  #confirmDeletion .modal-dialog {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .invoice-details__first {
     -webkit-box-orient: horizontal;

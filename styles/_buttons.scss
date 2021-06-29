@@ -1,6 +1,6 @@
 .action-buttons {
  
-    &__edit {
+    &__edit, &__cancel {
         @include invoice-action-button($color-whisper, $color-ship-cove);
         @include button-hover-active($color-selago, $color-ship-cove);
     }
