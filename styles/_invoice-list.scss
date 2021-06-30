@@ -109,3 +109,61 @@
         display: none;
     }
 }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .invoice-list-item {
+
+        &__details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .invoice-code {
+            order: 1;
+            flex-basis: 12%;
+        }
+    
+        .due-date {
+            order: 2;
+            align-self: inherit;
+            margin: {
+                top: 0;
+                bottom: 0;
+            }
+            width: inherit;
+            flex-basis: 20%;
+        }
+    
+        .client-name {
+            order: 3;
+            align-self: inherit;
+            text-align: start;
+            flex-basis: 20%;
+        }
+    
+        .grand-total {
+            order: 4;
+            align-self: inherit;
+            flex-basis: 18%;
+            text-align: right;
+        }
+    
+        .status {
+            order: 5;
+            flex-basis: inherit;
+            margin-left: 5%;
+            margin-right: 2%;
+        }
+
+        .details-icon {
+            display: block;
+            order: 6;
+        }
+
+    }
+
+}
