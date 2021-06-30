@@ -1,16 +1,26 @@
 .info-menu {
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     height: ToEmOrRem(44, rem);
     margin-bottom: ToEmOrRem(32, rem);
 
     &__left {
         h1 {
-            font-size: ToEmOrRem(20, rem);
+            font: {
+                size: ToEmOrRem(20, rem);
+                weight: 700;
+            };
+            line-height: ToEmOrRem(22, rem);
+            letter-spacing: -0.625px;
             margin-bottom: 0;
         }
         .invoice-count {
-            font-size: ToEmOrRem(12, rem);
+            font: {
+                size: ToEmOrRem(12, rem);
+                weight: 500;
+            };
+            line-height: ToEmOrRem(15, rem);
+            letter-spacing: -0.25px;
             color: #888EB0;
             margin-bottom: 0;
         }
@@ -27,7 +37,16 @@
 
             &__text {
                 margin-right: ToEmOrRem(12, rem);
-                font-size: ToEmOrRem(12, rem);
+                font: {
+                    size: ToEmOrRem(12, rem);
+                    weight: 700;
+                };
+                line-height: ToEmOrRem(15, rem);
+                letter-spacing: -0.25px;
+
+                .by-status-text {
+                    display: none;
+                }
             }
         }
 
@@ -40,6 +59,14 @@
             width: ToEmOrRem(90, rem);
             border-radius: ToEmOrRem(24, rem);
             margin-left: ToEmOrRem(18, rem);
+            padding: {
+                left: ToEmOrRem(6, rem);
+                right: ToEmOrRem(14, rem);
+            };
+
+            &__invoice-text {
+                display: none;
+            }
 
             .icon-plus-wrapper {
                 background-color: #fff;
@@ -50,6 +77,53 @@
                 justify-content: center;
                 align-items: center;
                 margin-right: ToEmOrRem(8, rem);
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .info-menu {
+        height: ToEmOrRem(59, rem);
+
+        &__left {
+            h1 {
+                font-size: ToEmOrRem(32, rem);
+                line-height: ToEmOrRem(36, rem);
+                letter-spacing: -1px;
+            }
+        }
+
+        &__right {
+
+            .filter-menu {
+    
+                &__text {
+    
+                    .by-status-text {
+                        display: inline;
+                    }
+                }
+            }
+
+            .new-invoice {
+                height: ToEmOrRem(48, rem);
+                width: ToEmOrRem(150, rem);
+                justify-content: flex-start;
+                padding: {
+                    left: ToEmOrRem(8, rem);
+                    right: ToEmOrRem(15, rem);
+                };
+
+                &__invoice-text {
+                    display: inline;
+                }
+
+                .icon-plus-wrapper {
+                    margin-right: ToEmOrRem(16, rem);
+                }
             }
         }
     }
