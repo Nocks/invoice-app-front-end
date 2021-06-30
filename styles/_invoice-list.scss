@@ -3,17 +3,6 @@
     color: $color-ship-cove;
 }
 
-@mixin status-details($hex-color, $rgba-color) {
-    color: $hex-color;
-    background-color: $rgba-color;
-
-    .status__bullet {
-        background-color: $hex-color;
-        display: block;
-        border-radius: 50%;
-    }
-}
-
 .status  {
     display: flex;
     justify-content: center;
