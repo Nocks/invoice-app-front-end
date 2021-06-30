@@ -1,0 +1,56 @@
+.info-menu {
+    justify-content: center;
+    align-items: baseline;
+    height: ToEmOrRem(44, rem);
+    margin-bottom: ToEmOrRem(32, rem);
+
+    &__left {
+        h1 {
+            font-size: ToEmOrRem(20, rem);
+            margin-bottom: 0;
+        }
+        .invoice-count {
+            font-size: ToEmOrRem(12, rem);
+            color: #888EB0;
+            margin-bottom: 0;
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .filter-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__text {
+                margin-right: ToEmOrRem(12, rem);
+                font-size: ToEmOrRem(12, rem);
+            }
+        }
+
+        .new-invoice {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-cornflower-blue;
+            height: ToEmOrRem(44, rem);
+            width: ToEmOrRem(90, rem);
+            border-radius: ToEmOrRem(24, rem);
+            margin-left: ToEmOrRem(18, rem);
+
+            .icon-plus-wrapper {
+                background-color: #fff;
+                width: ToEmOrRem(32, rem);
+                height: ToEmOrRem(32, rem);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: ToEmOrRem(8, rem);
+            }
+        }
+    }
+}
