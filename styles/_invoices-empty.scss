@@ -1,0 +1,52 @@
+.empty-invoice {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: {
+        left: ToEmOrRem(40, rem);
+        right: ToEmOrRem(40, rem);
+    }
+    margin: {
+        top: ToEmOrRem(102, rem);
+        bottom: ToEmOrRem(140, rem);
+    }
+
+    &__image-wrapper {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__message {
+
+        text-align: center;
+
+        .title {
+            font-size: ToEmOrRem(20, rem);
+            margin: {
+                top: ToEmOrRem(40, rem);;
+                bottom: ToEmOrRem(24, rem);
+            }
+            line-height: ToEmOrRem(22, rem);
+        }
+
+        .text {
+            font-size: ToEmOrRem(12, rem);
+            font-weight: 500;
+            color: #888EB0;
+            padding: {
+                left: ToEmOrRem(8, rem);
+                right: ToEmOrRem(8, rem);
+            }
+            line-height: ToEmOrRem(15, rem);
+            letter-spacing: ToEmOrRem(-0.25, rem);
+
+            .bold {
+                font-weight: 700;
+            }
+        }
+    }
+}

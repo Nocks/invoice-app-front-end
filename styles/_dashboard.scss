@@ -1,0 +1,54 @@
+.dashboard-container {
+    padding: {
+        left: 0;
+        right: 0;
+    }
+
+    &__inner {
+        display: flex;
+    }
+}
+
+.main-content {
+    padding: {
+        top: ToEmOrRem(104, rem);
+        left: ToEmOrRem(24, rem);
+        right: ToEmOrRem(24, rem);
+    }
+    background-color: $color-whisper;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    .dashboard-container {
+        /*
+            For the padding left, I factored in the width 
+            of the nav which is 72px. I used the tool at
+            the link below to do the conversion - px to vw.
+            https://khaledkzy.github.io/pixel-vh-vw-converter/
+        */
+        padding: {
+            left: calc(5.270863836017569vw + 6vw);
+            right: 6vw;
+        }
+    
+        &__inner {
+            justify-content: flex-start;
+        }
+    }
+
+    .main-content {
+        background-color: $color-whisper;
+        min-height: 100vh;
+        width: 100%;
+
+        padding-top: ToEmOrRem(72, rem);
+        // width: inherit;
+        // margin: auto;
+    }
+
+}
