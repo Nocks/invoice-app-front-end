@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'functions';
+@import 'navigation';
 @import 'info-menu';
 @import 'buttons';
 @import 'invoice-list';
@@ -23,68 +24,6 @@ body {
 
     &__inner {
         display: flex;
-    }
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    background-color: #373B53;
-    height: ToEmOrRem(72, em);
-    position: fixed;
-    left: 0;
-    right: 0;
-}
-
-.logo-wrapper {
-    width: ToEmOrRem(72, em);
-    height: ToEmOrRem(72, em);
-    background-color: $color-cornflower-blue;
-    border-top-right-radius: ToEmOrRem(20, em);
-    border-bottom-right-radius: ToEmOrRem(20, em);
-    position: relative;
-
-    &__down {
-        position: absolute;
-        bottom: 0;
-        width: ToEmOrRem(72, em);
-        height: ToEmOrRem(36, em);
-        background-color: $color-heliotrope;
-        border-top-left-radius: ToEmOrRem(20, em);
-        border-bottom-right-radius: ToEmOrRem(20, em);
-    }
-
-    &__logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-}
-
-.theme-toggler {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    right: ToEmOrRem(105, em);
-}
-
-.user-wrapper {
-    position: absolute;
-    right: 0;
-    border-left: 1px solid #494E6E;
-    width: ToEmOrRem(80, em);
-    height: 100%;
-    
-    &__image {
-        position: absolute;
-        right: ToEmOrRem(24, em);
-        top: 50%;
-        transform: translateY(-50%);
-        width: ToEmOrRem(32, em);
-        height: ToEmOrRem(32, em);
-        border-radius: 50%;
     }
 }
 
