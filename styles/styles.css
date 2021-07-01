@@ -427,6 +427,7 @@ nav {
 
 .empty-invoice__message .title {
   font-size: 1.25rem;
+  font-weight: 700;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   line-height: 1.375rem;
@@ -444,6 +445,19 @@ nav {
 
 .empty-invoice__message .text .bold {
   font-weight: 700;
+}
+
+.empty-invoice__message .text .invoice-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .empty-invoice__wrapper {
+    width: 15.08375rem;
+  }
+  .empty-invoice__message .text .invoice-text {
+    display: inline;
+  }
 }
 
 .invoice-code::before {

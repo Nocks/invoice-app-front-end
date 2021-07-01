@@ -25,7 +25,10 @@
         text-align: center;
 
         .title {
-            font-size: ToEmOrRem(20, rem);
+            font: {
+                size: ToEmOrRem(20, rem);
+                weight: 700;
+            };
             margin: {
                 top: ToEmOrRem(40, rem);;
                 bottom: ToEmOrRem(24, rem);
@@ -46,6 +49,32 @@
 
             .bold {
                 font-weight: 700;
+            }
+
+            .invoice-text {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .empty-invoice {
+
+        &__wrapper {
+            width: ToEmOrRem(241.34, rem) ;
+        }
+    
+        &__message {
+
+            .text {
+                
+                .invoice-text {
+                    display: inline;
+                }
             }
         }
     }
