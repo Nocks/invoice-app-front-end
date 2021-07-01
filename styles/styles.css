@@ -82,6 +82,10 @@
   padding-right: 0.875rem;
 }
 
+.info-menu__right .new-invoice:hover, .info-menu__right .new-invoice:active {
+  background-color: #9277FF;
+}
+
 .info-menu__right .new-invoice__invoice-text {
   display: none;
 }
@@ -123,6 +127,7 @@
             justify-content: flex-start;
     padding-left: 0.5rem;
     padding-right: 0.9375rem;
+    cursor: pointer;
   }
   .info-menu__right .new-invoice__invoice-text {
     display: inline;

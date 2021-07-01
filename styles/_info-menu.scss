@@ -64,6 +64,11 @@
                 right: ToEmOrRem(14, rem);
             };
 
+            &:hover,
+            &:active {
+                background-color: $color-heliotrope;
+            }
+
             &__invoice-text {
                 display: none;
             }
@@ -116,6 +121,7 @@
                     left: ToEmOrRem(8, rem);
                     right: ToEmOrRem(15, rem);
                 };
+                cursor: pointer;
 
                 &__invoice-text {
                     display: inline;
