@@ -1,9 +1,11 @@
 @import 'variables';
 @import 'mixins';
 @import 'functions';
+@import 'dashboard';
 @import 'navigation';
 @import 'info-menu';
 @import 'buttons';
+@import 'invoices-empty';
 @import 'invoice-list';
 @import 'invoice-view';
 
@@ -14,81 +16,4 @@ html {
 body {
     font-family: 'Spartan', sans-serif;
     line-height: 1.5;
-}
-
-.dashboard-container {
-    padding: {
-        left: 0;
-        right: 0;
-    }
-
-    &__inner {
-        display: flex;
-    }
-}
-
-.main-content {
-    padding: {
-        top: ToEmOrRem(104, em);
-        left: ToEmOrRem(24, em);
-        right: ToEmOrRem(24, em);
-    }
-    background-color: $color-whisper;
-    min-height: 100vh;
-    width: 100%;
-}
-
-
-
-.empty-invoice {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: {
-        left: ToEmOrRem(40, rem);
-        right: ToEmOrRem(40, rem);
-    }
-    margin: {
-        top: ToEmOrRem(102, rem);
-        bottom: ToEmOrRem(140, rem);
-    }
-
-    &__image-wrapper {
-        width: 100%;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    &__message {
-
-        text-align: center;
-
-        .title {
-            font-size: ToEmOrRem(20, rem);
-            margin: {
-                top: ToEmOrRem(40, rem);;
-                bottom: ToEmOrRem(24, rem);
-            }
-            line-height: ToEmOrRem(22, rem);
-        }
-
-        .text {
-            font-size: ToEmOrRem(12, rem);
-            font-weight: 500;
-            color: #888EB0;
-            padding: {
-                left: ToEmOrRem(8, rem);
-                right: ToEmOrRem(8, rem);
-            }
-            line-height: ToEmOrRem(15, rem);
-            letter-spacing: ToEmOrRem(-0.25, rem);
-
-            .bold {
-                font-weight: 700;
-            }
-        }
-    }
 }

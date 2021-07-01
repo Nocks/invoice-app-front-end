@@ -1,4 +1,48 @@
 /* Colours */
+.dashboard-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dashboard-container__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content {
+  padding-top: 6.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #F8F8FB;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .dashboard-container {
+    /*
+            For the padding left, I factored in the width 
+            of the nav which is 72px. I used the tool at
+            the link below to do the conversion - px to vw.
+            https://khaledkzy.github.io/pixel-vh-vw-converter/
+        */
+    padding-left: calc(5.270863836017569vw + 6vw);
+    padding-right: 6vw;
+  }
+  .dashboard-container__inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main-content {
+    background-color: #F8F8FB;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 4.5rem;
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,29 +52,29 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #373B53;
-  height: 4.5em;
+  height: 4.5rem;
   position: fixed;
   left: 0;
   right: 0;
 }
 
 .logo-wrapper {
-  width: 4.5em;
-  height: 4.5em;
+  width: 4.5rem;
+  height: 4.5rem;
   background-color: #7C5DFA;
-  border-top-right-radius: 1.25em;
-  border-bottom-right-radius: 1.25em;
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
   position: relative;
 }
 
 .logo-wrapper__down {
   position: absolute;
   bottom: 0;
-  width: 4.5em;
-  height: 2.25em;
+  width: 4.5rem;
+  height: 2.25rem;
   background-color: #9277FF;
-  border-top-left-radius: 1.25em;
-  border-bottom-right-radius: 1.25em;
+  border-top-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
 }
 
 .logo-wrapper__logo {
@@ -47,26 +91,76 @@ nav {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  right: 6.5625em;
+  right: 6.5625rem;
 }
 
 .user-wrapper {
   position: absolute;
   right: 0;
   border-left: 1px solid #494E6E;
-  width: 5em;
+  width: 5rem;
   height: 100%;
 }
 
 .user-wrapper__image {
   position: absolute;
-  right: 1.5em;
+  right: 1.5rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  nav {
+    width: 4.5rem;
+    height: 100vh;
+    border-top-right-radius: 1.25em;
+  }
+  .theme-toggler {
+    top: unset;
+    right: unset;
+    left: 0;
+    /* 32px + 88px */
+    bottom: 7.5rem;
+    cursor: pointer;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .user-wrapper {
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 5.5rem;
+    border-left: none;
+    border-top: 1px solid #494E6E;
+    width: 100%;
+  }
+  .user-wrapper__image {
+    position: static;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .info-menu {
@@ -207,6 +301,12 @@ nav {
   }
 }
 
+@media (min-width: 992px) {
+  .info-menu {
+    margin-bottom: 4.0625rem;
+  }
+}
+
 .action-buttons__edit, .action-buttons__cancel {
   font-size: 0.75rem;
   font-weight: 700;
@@ -295,6 +395,55 @@ nav {
   height: 3rem;
   outline: none;
   border: none;
+}
+
+.empty-invoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-top: 6.375rem;
+  margin-bottom: 8.75rem;
+}
+
+.empty-invoice__image-wrapper {
+  width: 100%;
+}
+
+.empty-invoice__image-wrapper img {
+  width: 100%;
+}
+
+.empty-invoice__message {
+  text-align: center;
+}
+
+.empty-invoice__message .title {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.375rem;
+}
+
+.empty-invoice__message .text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #888EB0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+}
+
+.empty-invoice__message .text .bold {
+  font-weight: 700;
 }
 
 .invoice-code::before {
@@ -620,7 +769,7 @@ body {
 .status-info .text {
   color: #858BB2;
   font-size: 0.75rem;
-  font-font-weight: 500;
+  font-weight: 500;
   line-height: 0.9375rem;
   letter-spacing: -0.01562rem;
 }
@@ -988,74 +1137,5 @@ html {
 body {
   font-family: 'Spartan', sans-serif;
   line-height: 1.5;
-}
-
-.dashboard-container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.dashboard-container__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-content {
-  padding-top: 6.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  background-color: #F8F8FB;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.empty-invoice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  margin-top: 6.375rem;
-  margin-bottom: 8.75rem;
-}
-
-.empty-invoice__image-wrapper {
-  width: 100%;
-}
-
-.empty-invoice__image-wrapper img {
-  width: 100%;
-}
-
-.empty-invoice__message {
-  text-align: center;
-}
-
-.empty-invoice__message .title {
-  font-size: 1.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.375rem;
-}
-
-.empty-invoice__message .text {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #888EB0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  line-height: 0.9375rem;
-  letter-spacing: -0.01562rem;
-}
-
-.empty-invoice__message .text .bold {
-  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

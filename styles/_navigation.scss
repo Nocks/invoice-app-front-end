@@ -2,28 +2,28 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #373B53;
-    height: ToEmOrRem(72, em);
+    height: ToEmOrRem(72, rem);
     position: fixed;
     left: 0;
     right: 0;
 }
 
 .logo-wrapper {
-    width: ToEmOrRem(72, em);
-    height: ToEmOrRem(72, em);
+    width: ToEmOrRem(72, rem);
+    height: ToEmOrRem(72, rem);
     background-color: $color-cornflower-blue;
-    border-top-right-radius: ToEmOrRem(20, em);
-    border-bottom-right-radius: ToEmOrRem(20, em);
+    border-top-right-radius: ToEmOrRem(20, rem);
+    border-bottom-right-radius: ToEmOrRem(20, rem);
     position: relative;
 
     &__down {
         position: absolute;
         bottom: 0;
-        width: ToEmOrRem(72, em);
-        height: ToEmOrRem(36, em);
+        width: ToEmOrRem(72, rem);
+        height: ToEmOrRem(36, rem);
         background-color: $color-heliotrope;
-        border-top-left-radius: ToEmOrRem(20, em);
-        border-bottom-right-radius: ToEmOrRem(20, em);
+        border-top-left-radius: ToEmOrRem(20, rem);
+        border-bottom-right-radius: ToEmOrRem(20, rem);
     }
 
     &__logo {
@@ -39,23 +39,63 @@ nav {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    right: ToEmOrRem(105, em);
+    right: ToEmOrRem(105, rem);
 }
 
 .user-wrapper {
     position: absolute;
     right: 0;
     border-left: 1px solid #494E6E;
-    width: ToEmOrRem(80, em);
+    width: ToEmOrRem(80, rem);
     height: 100%;
     
     &__image {
         position: absolute;
-        right: ToEmOrRem(24, em);
+        right: ToEmOrRem(24, rem);
         top: 50%;
         transform: translateY(-50%);
-        width: ToEmOrRem(32, em);
-        height: ToEmOrRem(32, em);
+        width: ToEmOrRem(32, rem);
+        height: ToEmOrRem(32, rem);
         border-radius: 50%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    nav {
+        width: ToEmOrRem(72, rem);
+        height: 100vh;
+        border-top-right-radius: 1.25em;
+    }
+
+    .theme-toggler {
+        top: unset;
+        right: unset;
+        left: 0;
+        /* 32px + 88px */
+        bottom: ToEmOrRem(120, rem);
+        cursor: pointer;
+        transform: translate(0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .user-wrapper {
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: ToEmOrRem(88, rem);
+        border-left: none;
+        border-top: 1px solid #494E6E;
+        width: 100%;
+
+        &__image {
+            position: static;
+            transform: translateY(0);
+        }
     }
 }
