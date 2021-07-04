@@ -99,3 +99,10 @@ nav {
         }
     }
 }
+
+.dark-theme {
+
+    nav {
+        @include dark-theme-background(secondary);
+    }
+}

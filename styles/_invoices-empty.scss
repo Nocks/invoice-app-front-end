@@ -79,3 +79,20 @@
         }
     }
 }
+
+.dark-theme {
+
+    .empty-invoice {
+
+        &__message {
+
+            .title {
+                @include dark-theme-text-color(primary);
+            }
+
+            .text {
+                @include dark-theme-text-color(secondary);
+            }
+        }
+    }
+}

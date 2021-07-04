@@ -43,6 +43,22 @@
   }
 }
 
+.dark-theme, .dark-theme .main-content {
+  background-color: #141625;
+}
+
+.dark-theme .main-content .info-menu__left h1 {
+  color: #FFFFFF;
+}
+
+.dark-theme .main-content .info-menu__left .invoice-count {
+  color: #DFE3FA;
+}
+
+.dark-theme .main-content .info-menu__right .filter-menu__text {
+  color: #FFFFFF;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,6 +177,10 @@ nav {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.dark-theme nav {
+  background-color: #1E2139;
 }
 
 .info-menu {
@@ -458,6 +478,14 @@ nav {
   .empty-invoice__message .text .invoice-text {
     display: inline;
   }
+}
+
+.dark-theme .empty-invoice__message .title {
+  color: #FFFFFF;
+}
+
+.dark-theme .empty-invoice__message .text {
+  color: #DFE3FA;
 }
 
 .invoice-code::before {

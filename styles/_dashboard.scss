@@ -52,3 +52,28 @@
     }
 
 }
+
+
+.dark-theme {
+    &, .main-content {
+        @include dark-theme-background(primary)
+    }
+
+    .main-content {
+
+        .info-menu__left {
+            h1 {
+                @include dark-theme-text-color(primary);
+            }
+
+            .invoice-count {
+                @include dark-theme-text-color(secondary);
+            }
+        }
+        .info-menu__right {
+            .filter-menu__text {
+                @include dark-theme-text-color(primary);
+            }
+        }
+    }
+}

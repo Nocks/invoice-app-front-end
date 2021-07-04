@@ -55,3 +55,19 @@
         @include invoice-action-button($bg-color, $text-color);
     }
 }
+
+@mixin dark-theme-background($bg-color-type) {
+    @if $bg-color-type == primary {
+        background-color: $dark-theme-bg-primary;
+    } @else if $bg-color-type == secondary {
+        background-color: $dark-theme-bg-secondary;
+    }
+}
+
+@mixin dark-theme-text-color($text-color-type) {
+    @if $text-color-type == primary {
+        color: $dark-theme-text-primary;
+    } @if $text-color-type == secondary {
+        color: $dark-theme-text-secondary;
+    }
+}

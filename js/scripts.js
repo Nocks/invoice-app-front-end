@@ -1,7 +1,15 @@
-const body = document.getElementsByTagName('body');
-const themeToggler = document.querySelector('.theme-toggler');
+const pageBody = document.body;
+const themeToggler = document.querySelector('.theme-toggler__img');
 
 
 themeToggler.addEventListener('click', () => {
-    console.log('Working...');
+
+    pageBody.classList.toggle('dark-theme');
+    
+    if (pageBody.classList.contains("dark-theme")) {
+        themeToggler.src="assets/icon-sun.svg";
+    } else {
+        themeToggler.src="assets/icon-moon.svg";
+    }
+    
 });
