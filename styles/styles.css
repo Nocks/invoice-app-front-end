@@ -700,6 +700,37 @@ nav {
   }
 }
 
+.dark-theme .invoice-list-item__wrapper {
+  background-color: #1E2139;
+}
+
+.dark-theme .invoice-list-item .invoice-code {
+  color: #FFFFFF;
+}
+
+.dark-theme .invoice-list-item .due-date, .dark-theme .invoice-list-item .due-date__title {
+  color: #DFE3FA;
+}
+
+.dark-theme .invoice-list-item .client-name {
+  color: #FFFFFF;
+}
+
+.dark-theme .invoice-list-item .grand-total {
+  color: #FFFFFF;
+}
+
+.dark-theme .invoice-list-item .status.draft {
+  color: #dfe3fa;
+  background-color: rgba(223, 227, 250, 0.06);
+}
+
+.dark-theme .invoice-list-item .status.draft .status__bullet {
+  background-color: #dfe3fa;
+  display: block;
+  border-radius: 50%;
+}
+
 body {
   position: relative;
   background-color: #F8F8FB;

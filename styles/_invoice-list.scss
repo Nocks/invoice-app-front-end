@@ -156,3 +156,40 @@
     }
 
 }
+
+
+.dark-theme {
+
+    .invoice-list-item {
+
+        &__wrapper {
+            @include dark-theme-background(secondary);
+        }
+
+        .invoice-code {
+            @include dark-theme-text-color(primary)
+        }
+    
+        .due-date {
+    
+            &, &__title {
+                @include dark-theme-text-color(secondary)
+            }
+        }
+    
+        .client-name {
+            @include dark-theme-text-color(primary)
+        }
+
+        .grand-total {
+            @include dark-theme-text-color(primary)
+        }
+
+        .status  {
+
+            &.draft {
+                @include status-details(#dfe3fa, rgba(223, 227, 250, 0.06));
+            }
+        }
+    }
+}
