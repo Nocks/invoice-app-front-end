@@ -1203,6 +1203,143 @@ body {
   }
 }
 
+.dark-theme #confirmDeletion .modal-content {
+  background-color: #1E2139;
+}
+
+.dark-theme #confirmDeletion .modal-header {
+  color: #FFFFFF;
+}
+
+.dark-theme #confirmDeletion .modal-body {
+  color: #DFE3FA;
+}
+
+.dark-theme #confirmDeletion .modal-body .invoice-code::before {
+  color: #DFE3FA;
+}
+
+.dark-theme #confirmDeletion .modal-footer .modal-action-buttons .action-buttons__cancel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #DFE3FA;
+  background-color: #252945;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.dark-theme #confirmDeletion .modal-footer .modal-action-buttons .action-buttons__cancel:hover, .dark-theme #confirmDeletion .modal-footer .modal-action-buttons .action-buttons__cancel:active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7E88C3;
+  background-color: #FFFFFF;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.dark-theme .main-content .go-back__text {
+  color: #FFFFFF;
+}
+
+.dark-theme .main-content .go-back__text:hover, .dark-theme .main-content .go-back__text:active {
+  color: #888EB0;
+}
+
+.dark-theme .main-content .invoice-view-menu .status-info .text {
+  color: #DFE3FA;
+}
+
+.dark-theme .main-content .invoice-view-menu, .dark-theme .main-content .invoice-view-menu .action-buttons {
+  background-color: #1E2139;
+}
+
+.dark-theme .main-content .invoice-view-menu .action-buttons__edit {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #DFE3FA;
+  background-color: #252945;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.dark-theme .main-content .invoice-view-menu .action-buttons__edit:hover, .dark-theme .main-content .invoice-view-menu .action-buttons__edit:active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7E88C3;
+  background-color: #FFFFFF;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.dark-theme .main-content .invoice-details {
+  background-color: #1E2139;
+}
+
+.dark-theme .main-content .invoice-details__first .primary .invoice-code {
+  color: #FFFFFF;
+}
+
+.dark-theme .main-content .invoice-details__first .primary .invoice-code::before {
+  color: #888EB0;
+}
+
+.dark-theme .main-content .invoice-details__first .project-name, .dark-theme .main-content .invoice-details__first .vendor-address {
+  color: #DFE3FA;
+}
+
+.dark-theme .main-content .invoice-details__second .label {
+  color: #DFE3FA;
+}
+
+.dark-theme .main-content .invoice-details__second .date, .dark-theme .main-content .invoice-details__second .bill-to__client-name {
+  color: #FFFFFF;
+}
+
+.dark-theme .main-content .invoice-details__second .client-address {
+  color: #DFE3FA;
+}
+
+.dark-theme .main-content .invoice-details__second .sent-to__client-email {
+  color: #FFFFFF;
+}
+
+.dark-theme .main-content .invoice-details__third, .dark-theme .main-content .invoice-details__third .amount-due {
+  background-color: #0C0E16;
+}
+
+.dark-theme .main-content .invoice-details__third .invoice-items {
+  background-color: #252945;
+  color: #DFE3FA;
+}
+
+.dark-theme .main-content .invoice-details__third .invoice-items .label, .dark-theme .main-content .invoice-details__third .invoice-items .invoice-item__amount {
+  color: #FFFFFF;
+}
+
 html {
   font-size: 16px;
 }

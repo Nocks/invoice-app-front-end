@@ -413,11 +413,139 @@ body {
                     @include strong-text(
                         $font-size: 24,
                         $letter-spacing: -.5,
-                        $text-color: $color-white,  
+                        $text-color: $color-white,
                     );
                 }
             }
         }
 
     }
+}
+
+.dark-theme {
+
+    #confirmDeletion {
+    
+        .modal {
+    
+            &-content {
+                background-color: $color-mirage;
+            }
+    
+            &-header {
+                color: $dark-theme-text-primary;
+            }
+    
+            &-body {
+                color: $dark-theme-text-secondary;
+    
+                .invoice-code::before {
+                    color: $dark-theme-text-secondary;
+                }
+            }
+
+            &-footer {
+
+                .modal-action-buttons {
+
+                    .action-buttons {
+
+                        &__cancel {
+                            @include invoice-action-button($color-ebony-clay, $color-selago);
+                            @include button-hover-active($color-white, $color-ship-cove);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   .main-content {
+
+    .go-back {
+
+        &__text {
+            @include dark-theme-text-color(primary);
+            
+            &:hover,
+            &:active {
+                color: #888EB0;
+            }
+        }
+    }
+
+    .invoice-view-menu {
+
+        .status-info {
+
+            .text {
+                color: $dark-theme-text-secondary;
+            }
+        }
+
+        &, .action-buttons {
+            @include dark-theme-background(secondary);
+        }
+        .action-buttons {
+
+            &__edit {
+                @include invoice-action-button($color-ebony-clay, $color-selago);
+                @include button-hover-active($color-white, $color-ship-cove);
+            }
+        }
+    }
+
+    .invoice-details {
+        background-color: $dark-theme-bg-secondary;
+
+        &__first {
+            .primary {
+                .invoice-code {
+                    color: $dark-theme-text-primary;
+
+                    &::before {
+                        color: #888EB0;
+                    }
+                }
+            }
+            .project-name, .vendor-address {
+                color: $dark-theme-text-secondary;
+            }
+        }
+
+        &__second {
+            .label {
+                color: $dark-theme-text-secondary;
+            }
+
+            .date, .bill-to__client-name {
+                color: $dark-theme-text-primary;
+            }
+
+            .client-address {
+                color: $dark-theme-text-secondary;
+            }
+
+            .sent-to__client-email {
+                color: $dark-theme-text-primary;
+            }
+        }
+
+        &__third {
+
+            &, .amount-due {
+                background-color: $color-vulcan;
+            }
+
+            .invoice-items {
+                background-color: $color-ebony-clay;
+                color: $dark-theme-text-secondary;
+
+                .label,.invoice-item__amount {
+                    color: $dark-theme-text-primary;
+                }
+            }
+        }
+    }
+   }
 }
