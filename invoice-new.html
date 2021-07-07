@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Invoice</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container-fluid dashboard-container">
+        <div class="dashboard-container__inner ">
+            <nav>
+                <div class="logo-wrapper">
+                    <img src="assets/logo.svg" alt="logo" class="logo-wrapper__logo">
+                    <div class="logo-wrapper__down"></div>
+                </div>
+                <div class="theme-toggler">
+                    <img src="assets/icon-moon.svg" class="theme-toggler__img" alt="theme-toggler">
+                </div>
+                <div class="user-wrapper">
+                    <img src="assets/image-avatar.jpg" alt="user-pic" class="user-wrapper__image">
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="go-back">
+                    <img src="assets/icon-arrow-left.svg" class="go-back__icon" alt="go back icon">
+                    <span class="go-back__text">Go back</span>
+                </div>
+                <div class="container form-content">
+                    <h1>New Invoice</h1>
+                    <form>
+                        <h3>Bill Form</h3>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="street-address">Street Address</label>
+                                <input type="text" id="street-address" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-8">
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" class="form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="post-code">Post Code</label>
+                                        <input type="text" id="post-code" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-row">
+                                    <div class="form-group col-12"> 
+                                        <label for="country">Country</label>
+                                        <input type="text" id="country" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Bill To</h3>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="client-name">Client's Name</label>
+                                <input type="text" id="client-name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="client-email">Client's Email</label>
+                                <input type="email" id="client-email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="-client-street-address">Street Address</label>
+                                <input type="text" id="-client-street-address" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-8">
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <label for="client-city">City</label>
+                                        <input type="text" id="client-city" class="form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="client-post-code">Post Code</label>
+                                        <input type="text" id="client-post-code" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-row">
+                                    <div class="form-group col-12"> 
+                                        <label for="client-country">Country</label>
+                                        <input type="text" id="client-country" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6"> 
+                                <label for="invoice-date">Invoice Date</label>
+                                <input type="date" id="invoice-date" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6"> 
+                                <label for="payment-terms">Payment Terms</label>
+                                <select id="inputState" class="form-control">
+                                    <option>Net 1 Day</option>
+                                    <option>Net 7 Days</option>
+                                    <option>Net 14 Days</option>
+                                    <option selected>Net 30 Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col"> 
+                                <label for="project-description">Project Description</label>
+                                <input type="text" id="project-description" class="form-control">
+                            </div>
+                        </div>
+                        <h2>Item List</h2>
+                        <div class="form-row d-none d-md-block">
+                            <div class="col">
+                                <div class="form-row">
+                                    <div class="col-md-4">
+                                        <div class="form-row">
+                                            <div class="col">Item Name</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-row">
+                                            <div class="col-md-2">Qty.</div>
+                                            <div class="col-md-4">Price</div>
+                                            <div class="col-md-3">Total</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="item-name">Item Name</label>
+                                    <input type="text" id="item-name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-row">
+                                    <div class="form-group col-2">
+                                        <label for="item-quantity">Qty.</label>
+                                        <input type="text" id="item-quantity" class="form-control">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="item-price">Price</label>
+                                        <input type="text" id="item-price" class="form-control">
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <label for="item-total">Total</label>
+                                        <span id="item-total" class="form-control" style="border: none;">0.00</span>
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <label class="item-delete" style="opacity: 0;">Delete</label>
+                                        <span class="form-control" style="border: none;"><img src="assets/icon-delete.svg" alt="item-delete"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
