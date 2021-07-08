@@ -71,3 +71,50 @@
         color: $dark-theme-text-secondary;
     }
 }
+
+@mixin form-title-element($font-size) {
+    font: {
+        size: ToEmOrRem($font-size, rem);
+        weight: 700;
+    }
+    margin-bottom: ToEmOrRem(24, rem);
+
+    @if $font-size == 24 {
+        line-height: ToEmOrRem(32, rem);
+        letter-spacing: -.5px;
+    } @else if $font-size == 12 {
+        line-height: ToEmOrRem(15, rem);
+        letter-spacing: -.25px;
+    }
+}
+
+@mixin form-title-base(
+    $font-size,
+    $font-weight,
+    $margin-bottom,
+    $line-height,
+    $letter-spacing
+) {
+    font: {
+        size: ToEmOrRem($font-size, rem);
+        weight: $font-weight;
+    }
+    margin-bottom: ToEmOrRem($margin-bottom, rem);
+    line-height: ToEmOrRem($line-height, rem);
+    letter-spacing: $letter-spacing;
+}
+
+@mixin form-title-element($title-name) {
+    @if $title-name == "form" {
+        @include form-title-base(24, 700, 24, 32, -.5px);
+    }
+    @if $title-name == "section" {
+        color: $color-cornflower-blue;
+        @include form-title-base(12, 700, 24, 15, -.25px);
+    }
+    @if $title-name == "item-list" {
+        color: #777f98;
+        @include form-title-base(18, 700, 16, 32, -.38px);
+        margin-top: ToEmOrRem(24, rem);
+    }
+}

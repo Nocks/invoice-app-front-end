@@ -1340,6 +1340,106 @@ body {
   color: #FFFFFF;
 }
 
+.form-view-wrapper__inner {
+  background-color: #FFFFFF;
+}
+
+.form-view-wrapper__inner .form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.form-view-wrapper__inner .section-title {
+  color: #7C5DFA;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 0.9375rem;
+  letter-spacing: -0.25px;
+}
+
+.form-view-wrapper__inner .item-list-title {
+  color: #777f98;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  letter-spacing: -0.38px;
+  margin-top: 1.5rem;
+}
+
+.form-view-wrapper__inner .bill-to {
+  margin-top: 2.5rem;
+}
+
+.form-view-wrapper__inner label, .form-view-wrapper__inner .item-heading {
+  color: #7E88C3;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.9375rem;
+  letter-spacing: -.25px;
+  margin-bottom: 0.625rem;
+}
+
+.form-view-wrapper__inner .form-control {
+  border-color: #DFE3FA;
+  font-size: 0.75rem;
+  font-weight: 700;
+  height: 3rem;
+  line-height: 0.9375rem;
+  letter-spacing: -.25px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  outline: none;
+}
+
+.form-view-wrapper__inner .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-view-wrapper__inner input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset !important;
+  -webkit-text-fill-color: inherit;
+}
+
+.form-view-wrapper__inner input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset !important;
+  -webkit-text-fill-color: inherit;
+}
+
+.form-view-wrapper__inner #item-total {
+  border: none;
+  padding-left: 0;
+  color: #2d3044;
+}
+
+.form-view-wrapper__inner .item-delete + .form-control {
+  border: none;
+}
+
+.form-view-wrapper__inner .item-delete + .form-control img {
+  cursor: pointer;
+}
+
+.form-view-wrapper__inner .item-delete + .form-control img:hover {
+  -webkit-filter: invert(31%) sepia(82%) saturate(7239%) hue-rotate(354deg) brightness(91%) contrast(128%);
+          filter: invert(31%) sepia(82%) saturate(7239%) hue-rotate(354deg) brightness(91%) contrast(128%);
+}
+
+.form-view-wrapper__inner .new-item {
+  height: 48px;
+  width: 100%;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  color: #7E88C3;
+  font-weight: 700;
+}
+
 html {
   font-size: 16px;
 }

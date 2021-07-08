@@ -31,10 +31,11 @@
                     <img src="assets/icon-arrow-left.svg" class="go-back__icon" alt="go back icon">
                     <span class="go-back__text">Go back</span>
                 </div>
-                <div class="container form-content">
-                    <h1>New Invoice</h1>
+               <div class="form-view-wrapper">
+                <div class="container form-view-wrapper__inner">
+                    <h1 class="form-title">New Invoice</h1>
                     <form>
-                        <h3>Bill Form</h3>
+                        <h3 class="section-title bill-from">Bill Form</h3>
                         <div class="form-row">
                             <div class="form-group col-12">
                                 <label for="street-address">Street Address</label>
@@ -63,7 +64,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3>Bill To</h3>
+                        <h3 class="section-title bill-to">Bill To</h3>
                         <div class="form-row">
                             <div class="form-group col-12">
                                 <label for="client-name">Client's Name</label>
@@ -125,55 +126,96 @@
                                 <input type="text" id="project-description" class="form-control">
                             </div>
                         </div>
-                        <h2>Item List</h2>
-                        <div class="form-row d-none d-md-block">
+                        <h2 class="item-list-title">Item List</h2>
+                        <div class="form-row d-none d-md-block mb-md-3">
                             <div class="col">
                                 <div class="form-row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-5">
                                         <div class="form-row">
-                                            <div class="col">Item Name</div>
+                                            <div class="col item-heading">Item Name</div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-7">
                                         <div class="form-row">
-                                            <div class="col-md-2">Qty.</div>
-                                            <div class="col-md-4">Price</div>
-                                            <div class="col-md-3">Total</div>
+                                            <div class="col-md-2 item-heading">Qty.</div>
+                                            <div class="col-md-5 item-heading">Price</div>
+                                            <div class="col-md-4 item-heading">Total</div>
+                                            <div class="col-md-1"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="form-group">
-                                    <label for="item-name">Item Name</label>
+                                    <label for="item-name" class="d-md-none">Item Name</label>
                                     <input type="text" id="item-name" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-7">
                                 <div class="form-row">
                                     <div class="form-group col-2">
-                                        <label for="item-quantity">Qty.</label>
+                                        <label for="item-quantity" class="d-md-none">Qty.</label>
                                         <input type="text" id="item-quantity" class="form-control">
                                     </div>
-                                    <div class="form-group col-4">
-                                        <label for="item-price">Price</label>
+                                    <div class="form-group col-5">
+                                        <label for="item-price" class="d-md-none">Price</label>
                                         <input type="text" id="item-price" class="form-control">
                                     </div>
-                                    <div class="form-group col-3">
-                                        <label for="item-total">Total</label>
-                                        <span id="item-total" class="form-control" style="border: none;">0.00</span>
+                                    <div class="form-group col-4">
+                                        <label for="item-total" class="d-md-none">Total</label>
+                                        <span id="item-total" class="form-control d-flex justify-content-start align-items-center">2000.00</span>
                                     </div>
+                                    <div class="form-group col-1">
+                                        <label class="item-delete d-md-none" style="opacity: 0;">Delete</label>
+                                        <span class="form-control d-flex justify-content-end align-items-center pr-0">
+                                            <img src="assets/icon-delete.svg" alt="item-delete">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="item-name" class="d-md-none">Item Name</label>
+                                    <input type="text" id="item-name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="form-row">
                                     <div class="form-group col-2">
-                                        <label class="item-delete" style="opacity: 0;">Delete</label>
-                                        <span class="form-control" style="border: none;"><img src="assets/icon-delete.svg" alt="item-delete"></span>
+                                        <label for="item-quantity" class="d-md-none">Qty.</label>
+                                        <input type="text" id="item-quantity" class="form-control">
+                                    </div>
+                                    <div class="form-group col-5">
+                                        <label for="item-price" class="d-md-none">Price</label>
+                                        <input type="text" id="item-price" class="form-control">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="item-total" class="d-md-none">Total</label>
+                                        <span id="item-total" class="form-control d-flex justify-content-start align-items-center">0.00</span>
+                                    </div>
+                                    <div class="form-group col-1">
+                                        <label class="item-delete d-md-none" style="opacity: 0;">Delete</label>
+                                        <span class="form-control d-flex justify-content-end align-items-center pr-0">
+                                            <img src="assets/icon-delete.svg" alt="item-delete">
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <div class="py-2">
+                        <button class="new-item">
+                            <span><img src="assets/icon-plus.svg" alt="plus icon"></span>
+                            <span>Add New Item</span>
+                        </button>
+                    </div>
+                    
                 </div>
+               </div>
             </div>
         </div>
     </div>

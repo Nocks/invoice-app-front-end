@@ -1,0 +1,91 @@
+.form-view-wrapper {
+
+    &__inner{
+
+        background-color: $color-white;
+        
+        .form-title {
+            @include form-title-element(form);
+        }
+    
+        .section-title {
+            @include form-title-element(section);
+        }
+    
+        .item-list-title {
+            @include form-title-element(item-list);
+        }
+    
+        .bill-to {
+            margin-top: ToEmOrRem(40, rem);
+        }
+    
+        label, .item-heading {
+            color: $color-ship-cove;
+            font: {
+                size: ToEmOrRem(12, rem);
+                weight: 500;
+            }
+            line-height: ToEmOrRem(15, rem);
+            letter-spacing: -.25px;
+            margin-bottom: ToEmOrRem(10, rem);
+        }
+    
+        .form-control {
+            border-color: $color-selago;
+            font: {
+                size: ToEmOrRem(12, rem);
+                weight: 700;
+            }
+            height: ToEmOrRem(48, rem);
+            line-height: ToEmOrRem(15, rem);
+            letter-spacing: -.25px;
+            padding: {
+                left: ToEmOrRem(20, rem);
+                right: ToEmOrRem(20, rem);
+            };
+            outline: none;
+        }
+    
+        .form-control:focus {
+            box-shadow: none;
+        }
+    
+        input:-webkit-autofill { 
+            -webkit-box-shadow: 0 0 0 1000px $color-white inset !important;
+            -webkit-text-fill-color: inherit;
+        }
+          input:-webkit-autofill:focus { 
+            -webkit-box-shadow: 0 0 0 1000px $color-white inset !important;
+            -webkit-text-fill-color: inherit;
+        }
+    
+        #item-total {
+            border: none;
+            padding-left: 0;
+            color: #2d3044;
+        }
+    
+        .item-delete + .form-control {
+            border: none;
+    
+            img {
+                cursor: pointer;
+            }
+            img:hover {
+                filter: invert(31%) sepia(82%) saturate(7239%) hue-rotate(354deg) brightness(91%) contrast(128%);
+            }
+        }
+
+        .new-item {
+            height: 48px;
+            width: 100%;
+            border-radius: 24px;
+            border: none;
+            outline: none;
+            color: $color-ship-cove;
+            font-weight: 700;
+        }
+    }
+}
+
