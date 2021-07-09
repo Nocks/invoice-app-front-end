@@ -27,12 +27,12 @@
                 </div>
             </nav>
             <div class="main-content">
-                <div class="go-back">
-                    <img src="assets/icon-arrow-left.svg" class="go-back__icon" alt="go back icon">
-                    <span class="go-back__text">Go back</span>
-                </div>
                <div class="form-view-wrapper">
                 <div class="container form-view-wrapper__inner">
+                    <div class="go-back">
+                        <img src="assets/icon-arrow-left.svg" class="go-back__icon" alt="go back icon">
+                        <span class="go-back__text">Go back</span>
+                    </div>
                     <h1 class="form-title">New Invoice</h1>
                     <form>
                         <h3 class="section-title bill-from">Bill Form</h3>
@@ -207,13 +207,17 @@
                             </div>
                         </div>
                     </form>
-                    <div class="py-2">
+                    <div class="py-2 mb-4">
                         <button class="new-item">
-                            <span><img src="assets/icon-plus.svg" alt="plus icon"></span>
-                            <span>Add New Item</span>
+                            <span class="icon-plus"><img src="assets/icon-plus.svg" alt="plus icon"></span>
+                            <span class="btn-text">Add New Item</span>
                         </button>
                     </div>
-                    
+                    <div class="action-buttons form-action">
+                        <button class="action-buttons__discard">Discard</button>
+                        <button class="action-buttons__save-draft">Save as Draft</button>
+                        <button class="action-buttons__save-send">Save &amp; Send</button>
+                    </div>
                 </div>
                </div>
             </div>

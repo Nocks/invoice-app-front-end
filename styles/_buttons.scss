@@ -14,4 +14,32 @@
         @include invoice-action-button($color-cornflower-blue);
         @include button-hover-active($color-heliotrope, $color-white);
     }
+
+    &__discard {
+        @include invoice-action-button($color-whisper, $color-ship-cove);
+        @include button-hover-active($color-selago, $color-ship-cove);
+    }
+
+    &__save-draft {
+        @include invoice-action-button($color-oxford-blue, $color-manatee);
+        width: 117px;
+    }
+
+    &__save-send {
+        @include invoice-action-button($color-cornflower-blue, $color-white);
+    }
+}
+
+.new-item {
+    @include invoice-action-button($color-whisper, $color-ship-cove);
+    padding: {
+        left: 0;
+        right: 0;
+    };
+    width: 100%;
+
+    .icon-plus img {
+        filter: invert(52%) sepia(60%) saturate(282%) hue-rotate(194deg) brightness(92%) contrast(89%);
+    }
+    @include button-hover-active($color-selago, $color-ship-cove);
 }
