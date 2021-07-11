@@ -464,11 +464,41 @@ nav {
   width: 117px;
 }
 
+.action-buttons__save-draft:hover, .action-buttons__save-draft:active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #888eb0;
+  background-color: #0C0E16;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
 .action-buttons__save-send {
   font-size: 0.75rem;
   font-weight: 700;
   color: #FFFFFF;
   background-color: #7C5DFA;
+  line-height: 0.9375rem;
+  letter-spacing: -0.01562rem;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.action-buttons__save-send:hover, .action-buttons__save-send:active {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #9277FF;
   line-height: 0.9375rem;
   letter-spacing: -0.01562rem;
   border-radius: 1.5rem;

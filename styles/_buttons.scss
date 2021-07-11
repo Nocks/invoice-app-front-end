@@ -22,11 +22,14 @@
 
     &__save-draft {
         @include invoice-action-button($color-oxford-blue, $color-manatee);
+        @include button-hover-active($color-vulcan, $color-manatee);
         width: 117px;
+        
     }
 
     &__save-send {
         @include invoice-action-button($color-cornflower-blue, $color-white);
+        @include button-hover-active($color-heliotrope, $color-white);
     }
 }
 
